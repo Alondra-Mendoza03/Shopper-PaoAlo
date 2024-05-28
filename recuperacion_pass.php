@@ -130,7 +130,7 @@
     <!-- Page Header Start -->
     <div class="container-fluid bg-secondary mb-5">
         <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 300px">
-            <h1 class="font-weight-semi-bold text-uppercase mb-3">Recperar COntraseña</h1>
+            <h1 class="font-weight-semi-bold text-uppercase mb-3">Nueva COntraseña</h1>
             <div class="d-inline-flex">
                 <p class="m-0"><a href="index.html">Home</a></p>
                 <p class="m-0 px-2">-</p>
@@ -150,7 +150,11 @@
                     <div id="success"></div>
                     <form name="sentMessage" id="form" method="POST" action="send_reset_email.php" novalidate="novalidate">
         <div class="control-group">
-            <input type="email" class="form-control" id="email" name="email" placeholder="Tu Email" required="required" data-validation-required-message="Por favor inserta tu email" />
+            <input type="password" class="form-control" id="password" name="password" placeholder="Tu Nueva Contraseña" required="required" data-validation-required-message="Por favor inserta tu email" />
+            <p class="help-block text-danger"></p>
+        </div>
+        <div class="control-group">
+            <input type="password" class="form-control" id="password" name="password" placeholder="Confirma COntraseña" required="required" data-validation-required-message="Por favor inserta tu email" />
             <p class="help-block text-danger"></p>
         </div>
         <div>
