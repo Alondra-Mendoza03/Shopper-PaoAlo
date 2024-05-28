@@ -1,0 +1,6 @@
+{
+    "name": "mitchelcerda/saberhacer",
+    "require": {
+        "phpmailer/phpmailer": "^6.5"
+    }
+}
