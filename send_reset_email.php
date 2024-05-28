@@ -42,17 +42,20 @@ try {
                 $mail->Host = 'smtp.gmail.com'; // Configura tu servidor SMTP
                 $mail->SMTPAuth = true;
                 $mail->Username = 'alondra.mitchel@gmail.com'; // Tu correo de Gmail
-                $mail->Password = 'Alondra2002'; // Tu contraseña de Gmail
+                $mail->Password = 'xmcz jvtd gbhs azqn'; // Tu contraseña de Gmail
                 $mail->SMTPSecure = 'tls';
                 $mail->Port = 587;
 
                 // Configuración del correo
-                $mail->setFrom('alondra.mitchel@gmail.com', 'Alondra2002');
+                $mail->setFrom('alondra.mitchel@gmail.com', 'xmcz jvtd gbhs azqn');
                 $mail->addAddress($email);
                 $mail->isHTML(true);
                 $mail->Subject = 'Restablecer tu contraseña';
                 $mail->Body    = "Para restablecer tu contraseña, haz clic en el siguiente enlace:<br><a href='http://localhost/reset_password.php?token=$token'>Restablecer contraseña</a>";
+                
 
+
+                
                 $mail->send();
                 echo 'Correo de recuperación enviado.';
             } catch (Exception $e) {
